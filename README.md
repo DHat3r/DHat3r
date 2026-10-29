@@ -12,17 +12,20 @@ Desarrollador de software de Chile. Me interesa construir sistemas que funcionen
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![Databricks](https://img.shields.io/badge/Databricks-FF3621?logo=databricks&logoColor=white)
 ![PySpark](https://img.shields.io/badge/PySpark-E25A1C?logo=apachespark&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=black)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
 
 ## Proyectos destacados
 
 | Proyecto | Qué es | Stack |
 |----------|--------|-------|
 | [InventoryManagement](https://github.com/DHat3r/InventoryManagement) | API de gestión de inventario con tests y Docker | C#, .NET, Docker |
-| Banco Futura (churn bancario) | Predicción de fuga de clientes: pipeline medallion, modelos XGBoost y Spark MLlib, API de scoring y panel | Python, Databricks, PySpark, FastAPI, React |
+| [Banco Futura](https://github.com/DHat3r/Banco-Futura-Servicio) | Predicción de fuga de clientes (XGBoost, AUC 0,95) y análisis de sentimiento de reclamos con BETO, entrenado con 13 mil reseñas reales de apps de bancos. Pipeline medallion en Databricks, API de scoring y panel, todo con `docker compose up`, tests y CI | Python, Databricks, FastAPI, React, Docker |
 
 ## En qué estoy trabajando
 
-- 🔭 Llevar mi proyecto de churn bancario a un nivel de producción: pipeline reproducible, experimentos con MLflow y API en contenedor.
+- 🔭 Siguiente paso en Banco Futura: registrar los modelos y experimentos con MLflow y desplegar la demo.
+- 🛠️ InventoryManagement: CI/CD con GitHub Actions y cobertura de tests.
 - 🌱 Profundizando en arquitectura backend, CI/CD y despliegue.
 
 ## Contacto
