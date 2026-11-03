@@ -28,14 +28,14 @@ Desarrollador de software de Chile y estudiante de Ingeniería Civil en Informá
 | Proyecto | Qué es | Stack |
 |----------|--------|-------|
 | [agentes-php](https://github.com/DHat3r/agentes-php) | Tres aplicaciones con agentes de IA (*tool calling* real) sobre un mismo núcleo: evaluador de respuestas, tutor adaptativo de matemáticas y conciliación bancaria. Las reglas de negocio viven en las herramientas, no en el prompt. 158 tests con un LLM simulado y CI | PHP 8, Laravel, Slim, OpenRouter, Vue 3, PostgreSQL, Redis, Docker |
-| [InventoryManagement](https://github.com/DHat3r/InventoryManagement) | API REST de inventario para pymes: kardex valorizado, JWT con refresh tokens y 4 roles de negocio, y panel web en React. 35 tests de integración y unitarios contra PostgreSQL real (Testcontainers) | C#, .NET 8, PostgreSQL, React, Docker |
+| [InventoryManagement](https://github.com/DHat3r/InventoryManagement) | API REST de inventario para pymes: kardex valorizado, flujo de aprobación de productos (Inventario propone, Admin aprueba y define el precio), JWT con refresh tokens y 4 roles de negocio, y panel web en React. 73 tests contra PostgreSQL real (Testcontainers) y CI con 69,7 % de cobertura | C#, .NET 8, PostgreSQL, React, Docker |
 | [Banco Futura](https://github.com/DHat3r/Banco-Futura-Servicio) | Predicción de fuga de clientes (XGBoost, AUC 0,95) y análisis de sentimiento de reclamos con BETO, entrenado con 13 mil reseñas reales de apps de bancos. Pipeline medallion en Databricks, API de scoring y panel, todo con `docker compose up`, tests y CI | Python, Databricks, FastAPI, React, Docker |
 | [Sistemas2](https://github.com/DHat3r/Sistemas2) · [Sistemas3](https://github.com/DHat3r/Sistemas3) | Sistemas Distribuidos (UDP), con Gonzalo Gaete. Un LLM responde preguntas de Yahoo Answers y otro evalúa sus respuestas frente a las humanas (*LLM-as-a-judge*), sobre Kafka con reintentos en Flink. La entrega 3 agrega análisis lingüístico offline con Hadoop y Pig | Python, Kafka, Flink, Hadoop, Pig, PostgreSQL, Redis |
 
 ## En qué estoy trabajando
 
 - 🤖 agentes-php: siguiente paso, reescribir yo mismo el ciclo del agente a partir de sus tests, para entenderlo línea por línea.
-- 🛠️ InventoryManagement: CI con GitHub Actions y cobertura, y después despliegue público con demo.
+- 🛠️ InventoryManagement: despliegue público con demo, y después caché con Redis y módulos de proveedores y pedidos.
 - 🔭 Banco Futura: registrar los modelos con MLflow y desplegar la demo.
 
 ## Contacto
