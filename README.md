@@ -34,7 +34,7 @@ Desarrollador de software de Chile y estudiante de Ingeniería Civil en Informá
 
 ## En qué estoy trabajando
 
-- 🤖 agentes-php: reescribiendo yo mismo el ciclo del agente a partir de sus tests, para entenderlo línea por línea.
+- 🤖 agentes-php: siguiente paso, reescribir yo mismo el ciclo del agente a partir de sus tests, para entenderlo línea por línea.
 - 🛠️ InventoryManagement: CI con GitHub Actions y cobertura, y después despliegue público con demo.
 - 🔭 Banco Futura: registrar los modelos con MLflow y desplegar la demo.
 
