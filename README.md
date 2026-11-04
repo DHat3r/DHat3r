@@ -30,6 +30,7 @@ Desarrollador de software de Chile y estudiante de Ingeniería Civil en Informá
 | Proyecto | Qué es | Stack |
 |----------|--------|-------|
 | [TutorHub](https://github.com/DHat3r/TutorHub) | Plataforma que conecta estudiantes universitarios con tutores: publicar tutorías y disponibilidad, reservar, confirmar y calificar. Rehice solo un proyecto en equipo (LinkUDP): un repo con `docker compose up`, huecos de seguridad cerrados (el usuario sale del JWT, nunca del body), 26 tests en CI y diseño nuevo | TypeScript, NestJS, Prisma, Next.js, PostgreSQL, Docker |
+| [Cafeteria](https://github.com/DHat3r/Cafeteria) | Sistema de marketing para una cafetería: los clientes se registran por QR con consentimiento, el administrador importa el Excel de ventas, ve un dashboard y envía ofertas por correo a segmentos. Contactos cifrados (AES-256-GCM), 202 tests y CI que levanta el stack con Docker Compose | TypeScript, NestJS, Next.js, Prisma, SQLite, Docker |
 | [agentes-php](https://github.com/DHat3r/agentes-php) | Tres aplicaciones con agentes de IA (*tool calling* real) sobre un mismo núcleo: evaluador de respuestas, tutor adaptativo de matemáticas y conciliación bancaria. Las reglas de negocio viven en las herramientas, no en el prompt. 158 tests con un LLM simulado y CI | PHP 8, Laravel, Slim, OpenRouter, Vue 3, PostgreSQL, Redis, Docker |
 | [InventoryManagement](https://github.com/DHat3r/InventoryManagement) | API REST de inventario para pymes: kardex valorizado, flujo de aprobación de productos (Inventario propone, Admin aprueba y define el precio), JWT con refresh tokens y 4 roles de negocio, y panel web en React. 73 tests contra PostgreSQL real (Testcontainers) y CI con 69,7 % de cobertura | C#, .NET 8, PostgreSQL, React, Docker |
 | [Banco Futura](https://github.com/DHat3r/Banco-Futura-Servicio) | Predicción de fuga de clientes (XGBoost, AUC 0,95) y análisis de sentimiento de reclamos con BETO, entrenado con 13 mil reseñas reales de apps de bancos. Pipeline medallion en Databricks, API de scoring y panel, todo con `docker compose up`, tests y CI | Python, Databricks, FastAPI, React, Docker |
@@ -38,6 +39,7 @@ Desarrollador de software de Chile y estudiante de Ingeniería Civil en Informá
 ## En qué estoy trabajando
 
 - 🎓 TutorHub: tests de reservas y perfil, ESLint del backend en el CI y despliegue público.
+- ☕ Cafeteria: límite de peticiones en el registro y el login, doble confirmación del correo y despliegue público.
 - 🤖 agentes-php: siguiente paso, reescribir yo mismo el ciclo del agente a partir de sus tests, para entenderlo línea por línea.
 - 🛠️ InventoryManagement: despliegue público con demo, y después caché con Redis y módulos de proveedores y pedidos.
 - 🔭 Banco Futura: registrar los modelos con MLflow y desplegar la demo.
