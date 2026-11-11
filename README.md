@@ -35,7 +35,7 @@ Desarrollador de software de Chile y estudiante de Ingeniería Civil en Informá
 | [agentes-php](https://github.com/DHat3r/agentes-php) | Tres aplicaciones con agentes de IA (*tool calling* real) sobre un mismo núcleo: evaluador de respuestas, tutor adaptativo de matemáticas y conciliación bancaria. Las reglas de negocio viven en las herramientas, no en el prompt. 158 tests con un LLM simulado y CI | PHP 8, Laravel, Slim, OpenRouter, Vue 3, PostgreSQL, Redis, Docker |
 | [Taquilla](https://github.com/DHat3r/entradas-soa) | Venta de entradas para eventos con 7 servicios independientes que solo se hablan por RabbitMQ y una web en React (clientes e interno, con modo claro y oscuro). La compra es una saga que libera el cupo si el pago falla, los cupos se descuentan de forma atómica y las entradas llevan un QR firmado. 177 tests y CI | Python, FastAPI, RabbitMQ, PostgreSQL, React, Docker |
 | [InventoryManagement](https://github.com/DHat3r/InventoryManagement) | API REST de inventario para pymes: kardex valorizado, flujo de aprobación de productos (Inventario propone, Admin aprueba y define el precio), JWT con refresh tokens y 4 roles de negocio, y panel web en React. 73 tests contra PostgreSQL real (Testcontainers) y CI con 69,7 % de cobertura | C#, .NET 8, PostgreSQL, React, Docker |
-| [Banco Futura](https://github.com/DHat3r/Banco-Futura-Servicio) | Predicción de fuga de clientes (XGBoost, AUC 0,95) y análisis de sentimiento de reclamos con BETO, entrenado con 13 mil reseñas reales de apps de bancos. Pipeline medallion en Databricks, API de scoring y panel, todo con `docker compose up`, tests y CI | Python, Databricks, FastAPI, React, Docker |
+| [Banco Futura](https://github.com/DHat3r/Banco-Futura-Servicio) · [demo](https://banco-futura-web.onrender.com) | Predicción de fuga de clientes (XGBoost, AUC 0,95) y análisis de sentimiento de reclamos con BETO, entrenado con 13 mil reseñas reales de apps de bancos. Para servirlo en 512 MB cuanticé BETO a int8 con ONNX: F1 0,876 frente a 0,886, 5 veces más rápido. Pipeline medallion en Databricks, API de scoring y panel, `docker compose up` y CI/CD: tests en GitHub Actions y despliegue automático en Render | Python, Databricks, FastAPI, ONNX, React, Docker, Render |
 | [Clasificador de suelo](https://github.com/DHat3r/Clasificador-Suelo) | Clasifica imágenes satelitales (EuroSAT) en 5 tipos de cobertura del suelo. Comparé una CNN propia con y sin dropout y transfer learning con ResNet18 (99,47 % en test), con partición sin fuga de datos. API, web, 17 tests y CI | Python, PyTorch, FastAPI, Docker |
 | [To-Do-List](https://github.com/DHat3r/To-Do-List) | API REST de tareas con registro y login JWT, donde cada usuario solo ve sus tareas. 19 tests, Docker y CI | Python, FastAPI, SQLite, Docker |
 
@@ -46,7 +46,7 @@ Desarrollador de software de Chile y estudiante de Ingeniería Civil en Informá
 - 🤖 agentes-php: siguiente paso, reescribir yo mismo el ciclo del agente a partir de sus tests, para entenderlo línea por línea.
 - 🎟️ Taquilla: validación de entradas por evento, límite de reservas por cliente y una cola de mensajes fallidos.
 - 🛠️ InventoryManagement: despliegue público con demo, y después caché con Redis y módulos de proveedores y pedidos.
-- 🔭 Banco Futura: registrar los modelos con MLflow y desplegar la demo.
+- 🔭 Banco Futura: registrar los modelos con MLflow.
 
 ## Contacto
 
